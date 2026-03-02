@@ -78,7 +78,7 @@ house-price-prediction-ml/
 
 ## ⚙️ Backend Setup (FastAPI)
 
-```bash
+
 cd backend
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
@@ -113,4 +113,51 @@ Response:
 
 {
   "predicted_price": 245000.32
-}
+} 
+
+🌟 Key Highlights
+
+Log-transformed regression for skew handling
+
+Feature alignment for safe inference
+
+Zero-filling for missing features
+
+Clean backend API architecture
+
+Production-ready folder structure
+
+Fully integrated frontend
+
+📌 Future Improvements
+
+SHAP model interpretability
+
+Deployment on Render & Vercel
+
+Docker containerization
+
+CI/CD pipeline
+
+Model monitoring
+
+👨‍💻 Author
+
+Abdul Karim
+
+Machine Learning & Full Stack Developer
+
+⭐ If you like this project, give it a star!
+
+---
+
+# 💎 Optional: Add Tech Badges (Looks Premium)
+
+Add this at the very top of README:
+
+```markdown
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![React](https://img.shields.io/badge/React-Frontend-blue)
+![XGBoost](https://img.shields.io/badge/XGBoost-ML-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
