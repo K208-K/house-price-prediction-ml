@@ -55,3 +55,62 @@ The model uses XGBoost with tuned hyperparameters for optimal generalization.
 
 ## 🏗️ Project Architecture
 
+house-price-prediction-ml/
+│
+├── backend/
+│ ├── main.py
+│ ├── best_house_price_model.pkl
+│ ├── model_features.pkl
+│ └── requirements.txt
+│
+├── frontend/
+│ ├── src/
+│ ├── package.json
+│ └── vite.config.ts
+│
+├── notebook/
+│ ├── EDA.ipynb
+│ └── train.ipynb
+│
+└── README.md
+
+---
+
+## ⚙️ Backend Setup (FastAPI)
+
+```bash
+cd backend
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+http://127.0.0.1:8000
+🎨 Frontend Setup (React + Vite)
+cd frontend
+npm install
+npm run dev
+
+Frontend runs at:
+
+http://localhost:5173
+🔌 API Endpoint
+POST /predict
+
+Request Body Example:
+
+{
+  "OverallQual": 7,
+  "GrLivArea": 1800,
+  "GarageCars": 2,
+  "TotalBsmtSF": 900,
+  "YearBuilt": 2005,
+  "FullBath": 2,
+  "BedroomAbvGr": 3
+}
+
+Response:
+
+{
+  "predicted_price": 245000.32
+}
