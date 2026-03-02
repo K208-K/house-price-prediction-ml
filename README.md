@@ -151,13 +151,10 @@ Machine Learning & Full Stack Developer
 
 ---
 
-# 💎 Optional: Add Tech Badges (Looks Premium)
-
-Add this at the very top of README:
-
-```markdown
+# 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
 ![React](https://img.shields.io/badge/React-Frontend-blue)
 ![XGBoost](https://img.shields.io/badge/XGBoost-ML-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
+
